@@ -36,6 +36,17 @@ export default function Application(props) {
     });
   });
 
+  function bookInterview(id, interview) {
+    console.log(id, interview);
+  }
+
+  function save(name, interviewer) {
+    const interview = {
+      student: name,
+      interviewer,
+    };
+  }
+
   const appointmentsArr = dailyAppointments.map((appointment) => {
     const interview = getInterview(state, appointment.interview);
     return (
@@ -44,6 +55,7 @@ export default function Application(props) {
         key={appointment.id}
         interview={interview}
         interviewers={dailyInterviewers}
+        bookInterview={bookInterview}
       />
     );
   });
