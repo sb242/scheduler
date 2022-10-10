@@ -2,9 +2,8 @@ import React from "react";
 import DayListItem from "components/DayListItem";
 
 export default function DayList(props) {
-  
   const dayListItemArr = props.days.map((dayListItem) => {
-    return(
+    return (
       <DayListItem
         key={dayListItem.id}
         name={dayListItem.name}
@@ -13,13 +12,7 @@ export default function DayList(props) {
         setDay={props.onChange}
       />
     );
-  })
+  });
 
-  return (
-    <ul>
-      {dayListItemArr}
-    </ul>
-  );
-
-
+  return <ul>{dayListItemArr}</ul>;
 }
