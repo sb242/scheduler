@@ -6,9 +6,9 @@ export default function useVisualMode(initial) {
 
   const transition = function (transition, replace = false) {
     if (replace) {
-      setHistory([...history]);
+      setHistory((prev) => [...prev]);
     } else {
-      setHistory([...history, transition]);
+      setHistory((prev) => [...prev, transition]);
     }
     setMode(transition);
   };
