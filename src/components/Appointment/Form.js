@@ -30,6 +30,12 @@ export default function Form(props) {
     }
 
     setError("");
+
+    if (props.onEdit) {
+      props.onSave(student, interviewer, true);
+      return;
+    }
+
     props.onSave(student, interviewer);
   }
 
