@@ -38,7 +38,10 @@ export function getInterview(state, interview) {
   }
 
   const interviewCopy = {};
+
   interviewCopy.student = interview.student;
+
   interviewCopy.interviewer = state.interviewers[interview.interviewer];
+
   return interviewCopy;
 }

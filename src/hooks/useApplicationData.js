@@ -38,6 +38,7 @@ export default function useApplicationData() {
     };
 
     return axios.put(`/api/appointments/${id}`, appointment).then((res) => {
+      //checks if an we are editing the appointment and if we are it will not call the updateSpots function as the count does not need to change
       edit
         ? setState({ ...state, appointments })
         : setState({ ...state, appointments, days: updateSpots(id, false) });
@@ -60,6 +61,7 @@ export default function useApplicationData() {
     });
   }
 
+  //takes in two variables, an appointment id and a boolean on whether increment or not
   function updateSpots(id, increment) {
     let index = 0;
 
