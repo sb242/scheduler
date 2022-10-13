@@ -6,9 +6,7 @@ This application allows users to book appointments through different times of th
 
 ## Final Product
 
-!["screenshot of URLSs page"]
-!["screenshot of create URL page"]
-!["screenshot of edit URL page"]
+https://user-images.githubusercontent.com/105334105/195473840-cf7128cb-e9ee-42f6-a575-a693a11b5530.mov
 
 ## Dependencies
 
