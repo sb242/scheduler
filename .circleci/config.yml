@@ -17,6 +17,9 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
+      - run: |
+          touch .env 
+          echo SKIP_PREFLIGHT_CHECK=true >> .env
       - run: npm test
 
 workflows:
