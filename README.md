@@ -8,6 +8,9 @@ This application allows users to book appointments through different times of th
 
 https://user-images.githubusercontent.com/105334105/195473840-cf7128cb-e9ee-42f6-a575-a693a11b5530.mov
 
+![Inspecting appointments](https://user-images.githubusercontent.com/105334105/195474216-cdd506a1-8092-4d2c-9a18-da1e0c59d032.png)
+![Creating an appointment](https://user-images.githubusercontent.com/105334105/195474254-84a75548-3c89-4709-a9eb-4b24eecec64a.png)
+
 ## Dependencies
 
 - Axios
