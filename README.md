@@ -1,23 +1,29 @@
-# Interview Scheduler
+# Interview Scheduler Project
 
-## Setup
+Interview Scheduler is a front end web application. The front end is built with React.
 
-Install dependencies with `npm install`.
+This application allows users to book appointments through different times of the week with interviewers that are available. The web application is reactive and updates synchronously with the database while displaying to the user the updated changes without ever needing to refresh their browser.
 
-## Running Webpack Development Server
+## Final Product
 
-```sh
-npm start
-```
+!["screenshot of URLSs page"]
+!["screenshot of create URL page"]
+!["screenshot of edit URL page"]
 
-## Running Jest Test Framework
+## Dependencies
 
-```sh
-npm test
-```
+- Axios
+- Babel-loader
+- classnames
+- normalize.css
+- react
+- react-dom
+- react-scripts
 
-## Running Storybook Visual Testbed
+## Getting Started
 
-```sh
-npm run storybook
-```
+- Before running this React app you must have the accompanying scheduler-api server running in order for this app to access the database it needs to function. It can be found here: https://github.com/lighthouse-labs/scheduler-api
+
+- Install all dependencies (using the `npm install` command).
+
+- Run the development web server using the `npm run start` command.
